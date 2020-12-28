@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<playlists>
+    <playlist>
+        <name>K-Pop</name>
+        <id>59e302fc-9fbf-4d2a-9f3e-5a26b0e93b47</id>
+        <song>
+            <titlesong>I Need Somebody</titlesong>
+            <artistsong>DAY6</artistsong>
+            <durationsong>219</durationsong>
+            <idsong>00000da1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/INeedSomebody.wav</contentssong>
+            <genresong>ROCK</genresong>
+        </song>
+        <song>
+            <titlesong>I'm Fine</titlesong>
+            <artistsong>BTS</artistsong>
+            <durationsong>240</durationsong>
+            <idsong>000000c1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/ImFine.wav</contentssong>
+            <genresong>KPOP</genresong>
+        </song>
+        <song>
+            <titlesong>Precious</titlesong>
+            <artistsong>Ateez</artistsong>
+            <durationsong>102</durationsong>
+            <idsong>000000a1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/Precious.wav</contentssong>
+            <genresong>KPOP</genresong>
+        </song>
+        <song>
+            <titlesong>Save Me</titlesong>
+            <artistsong>BTS</artistsong>
+            <durationsong>223</durationsong>
+            <idsong>000000b1-0001-0000-0000-000000000000</idsong>
+            <contentssong>files/SaveMe.wav</contentssong>
+            <genresong>KPOP</genresong>
+        </song>
+    </playlist>
+    <playlist>
+        <name>Deutsch</name>
+        <id>7757c1b4-234d-4d27-af78-d17bab6ae5fc</id>
+        <song>
+            <titlesong>Der Engel</titlesong>
+            <artistsong>Richard Wagner</artistsong>
+            <durationsong>208</durationsong>
+            <idsong>00000bb1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/DerEngel.mp3</contentssong>
+            <genresong>CLASSIC</genresong>
+        </song>
+        <song>
+            <titlesong>Der Walkürenritt</titlesong>
+            <artistsong>Richard Wagner</artistsong>
+            <durationsong>383</durationsong>
+            <idsong>00000ea1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/DerWalkurenritt.mp3</contentssong>
+            <genresong>CLASSIC</genresong>
+        </song>
+        <song>
+            <titlesong>Traüme</titlesong>
+            <artistsong>Richard Wagner</artistsong>
+            <durationsong>252</durationsong>
+            <idsong>00000fa1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/Traume.mp3</contentssong>
+            <genresong>CLASSIC</genresong>
+        </song>
+        <book>
+            <titlebook>Anti-Bomben-Diskurs</titlebook>
+            <authorbook>Albert Einstein</authorbook>
+            <durationbook>57</durationbook>
+            <idbook>000000e1-0000-0000-0000-000000000001</idbook>
+            <contentsbook>files/AntiBombenDiskurs.wav</contentsbook>
+            <languagebook>GERMAN</languagebook>
+            <categorybook>SPEECH</categorybook>
+        </book>
+    </playlist>
+    <playlist>
+        <name>Novels</name>
+        <id>9ec92bad-3c32-4c3e-a5b7-6542fb1764c7</id>
+        <book>
+            <titlebook>Bel Ami</titlebook>
+            <authorbook>Guy De Maupassant</authorbook>
+            <durationbook>60</durationbook>
+            <idbook>000000a1-0000-0000-0000-000000000001</idbook>
+            <contentsbook>files/BelAmi.wav</contentsbook>
+            <languagebook>FRENCH</languagebook>
+            <categorybook>NOVEL</categorybook>
+        </book>
+        <book>
+            <titlebook>Don Quichotte</titlebook>
+            <authorbook>Miguel Cervantes</authorbook>
+            <durationbook>1740</durationbook>
+            <idbook>000000f1-0000-0000-0000-000000000001</idbook>
+            <contentsbook>files/DonQuichotte.wav</contentsbook>
+            <languagebook>SPANISH</languagebook>
+            <categorybook>NOVEL</categorybook>
+        </book>
+        <book>
+            <titlebook>Je Veux Des Pâtes</titlebook>
+            <authorbook>Stephanie Blake</authorbook>
+            <durationbook>160</durationbook>
+            <idbook>000000c1-0000-0000-0000-000000000001</idbook>
+            <contentsbook>files/JeVeuxDesPates.wav</contentsbook>
+            <languagebook>FRENCH</languagebook>
+            <categorybook>YOUTH</categorybook>
+        </book>
+    </playlist>
+    <playlist>
+        <name>Asia</name>
+        <id>8d75900b-0156-41c0-bc80-d24331743eac</id>
+        <song>
+            <titlesong>I Need Somebody</titlesong>
+            <artistsong>DAY6</artistsong>
+            <durationsong>219</durationsong>
+            <idsong>00000da1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/INeedSomebody.wav</contentssong>
+            <genresong>ROCK</genresong>
+        </song>
+        <song>
+            <titlesong>Save Me</titlesong>
+            <artistsong>BTS</artistsong>
+            <durationsong>223</durationsong>
+            <idsong>000000b1-0001-0000-0000-000000000000</idsong>
+            <contentssong>files/SaveMe.wav</contentssong>
+            <genresong>KPOP</genresong>
+        </song>
+        <song>
+            <titlesong>Kousui</titlesong>
+            <artistsong>EITO</artistsong>
+            <durationsong>259</durationsong>
+            <idsong>000000f1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/Kousui.mp3</contentssong>
+            <genresong>POP</genresong>
+        </song>
+        <song>
+            <titlesong>Precious</titlesong>
+            <artistsong>Ateez</artistsong>
+            <durationsong>102</durationsong>
+            <idsong>000000a1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/Precious.wav</contentssong>
+            <genresong>KPOP</genresong>
+        </song>
+        <song>
+            <titlesong>I'm Fine</titlesong>
+            <artistsong>BTS</artistsong>
+            <durationsong>240</durationsong>
+            <idsong>000000c1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/ImFine.wav</contentssong>
+            <genresong>KPOP</genresong>
+        </song>
+        <book>
+            <titlebook>Krasavitse</titlebook>
+            <authorbook>Alexander Pushkin</authorbook>
+            <durationbook>100</durationbook>
+            <idbook>000000b1-0000-0000-0000-000000000001</idbook>
+            <contentsbook>files/Krasavitse.wav</contentsbook>
+            <languagebook>RUSSIAN</languagebook>
+            <categorybook>DOCUMENTARY</categorybook>
+        </book>
+        <book>
+            <titlebook>The Man, His Son And Their Donkey (父亲 儿子和驴)</titlebook>
+            <authorbook>Little Fox (小狐狸)</authorbook>
+            <durationbook>160</durationbook>
+            <idbook>000000d1-0000-0000-0000-000000000001</idbook>
+            <contentsbook>files/TheManHisSonAndTheirDonkey.wav</contentsbook>
+            <languagebook>CHINESE</languagebook>
+            <categorybook>NOVEL</categorybook>
+        </book>
+    </playlist>
+</playlists>

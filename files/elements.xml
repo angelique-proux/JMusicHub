@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<elements>
+    <song>
+        <titlesong>Precious</titlesong>
+        <artistsong>Ateez</artistsong>
+        <durationsong>102</durationsong>
+        <idsong>000000a1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/Precious.wav</contentssong>
+        <genresong>KPOP</genresong>
+    </song>
+    <song>
+        <titlesong>Save Me</titlesong>
+        <artistsong>BTS</artistsong>
+        <durationsong>223</durationsong>
+        <idsong>000000b1-0001-0000-0000-000000000000</idsong>
+        <contentssong>files/SaveMe.wav</contentssong>
+        <genresong>KPOP</genresong>
+    </song>
+    <song>
+        <titlesong>I'm Fine</titlesong>
+        <artistsong>BTS</artistsong>
+        <durationsong>240</durationsong>
+        <idsong>000000c1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/ImFine.wav</contentssong>
+        <genresong>KPOP</genresong>
+    </song>
+    <song>
+        <titlesong>Badunkadunk</titlesong>
+        <artistsong>BLV</artistsong>
+        <durationsong>86</durationsong>
+        <idsong>000000d1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/Badunkadunk.wav</contentssong>
+        <genresong>POP</genresong>
+    </song>
+    <song>
+        <titlesong>People You Know</titlesong>
+        <artistsong>Selena Gomez</artistsong>
+        <durationsong>86</durationsong>
+        <idsong>000000e1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/PeopleYouKnow.wav</contentssong>
+        <genresong>POP</genresong>
+    </song>
+    <song>
+        <titlesong>Kousui</titlesong>
+        <artistsong>EITO</artistsong>
+        <durationsong>259</durationsong>
+        <idsong>000000f1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/Kousui.mp3</contentssong>
+        <genresong>POP</genresong>
+    </song>
+    <song>
+        <titlesong>This Is America</titlesong>
+        <artistsong>Childish Gambino</artistsong>
+        <durationsong>245</durationsong>
+        <idsong>00000aa1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/ThisIsAmerica.mp3</contentssong>
+        <genresong>RAP</genresong>
+    </song>
+    <song>
+        <titlesong>Survival</titlesong>
+        <artistsong>Drake</artistsong>
+        <durationsong>136</durationsong>
+        <idsong>00000ba1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/Survival.wav</contentssong>
+        <genresong>RAP</genresong>
+    </song>
+    <song>
+        <titlesong>Nonstop</titlesong>
+        <artistsong>Drake</artistsong>
+        <durationsong>239</durationsong>
+        <idsong>00000ca1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/Nonstop.wav</contentssong>
+        <genresong>RAP</genresong>
+    </song>
+    <song>
+        <titlesong>I Need Somebody</titlesong>
+        <artistsong>DAY6</artistsong>
+        <durationsong>219</durationsong>
+        <idsong>00000da1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/INeedSomebody.wav</contentssong>
+        <genresong>ROCK</genresong>
+    </song>
+    <song>
+        <titlesong>Der Walkürenritt</titlesong>
+        <artistsong>Richard Wagner</artistsong>
+        <durationsong>383</durationsong>
+        <idsong>00000ea1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/DerWalkurenritt.mp3</contentssong>
+        <genresong>CLASSIC</genresong>
+    </song>
+    <song>
+        <titlesong>Traüme</titlesong>
+        <artistsong>Richard Wagner</artistsong>
+        <durationsong>252</durationsong>
+        <idsong>00000fa1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/Traume.mp3</contentssong>
+        <genresong>CLASSIC</genresong>
+    </song>
+    <song>
+        <titlesong>Der Engel</titlesong>
+        <artistsong>Richard Wagner</artistsong>
+        <durationsong>208</durationsong>
+        <idsong>00000bb1-0000-0000-0000-000000000000</idsong>
+        <contentssong>files/DerEngel.mp3</contentssong>
+        <genresong>CLASSIC</genresong>
+    </song>
+    <audiobook>
+        <titlebook>Bel Ami</titlebook>
+        <authorbook>Guy De Maupassant</authorbook>
+        <durationbook>60</durationbook>
+        <idbook>000000a1-0000-0000-0000-000000000001</idbook>
+        <contentsbook>files/BelAmi.wav</contentsbook>
+        <languagebook>FRENCH</languagebook>
+        <categorybook>NOVEL</categorybook>
+    </audiobook>
+    <audiobook>
+        <titlebook>Krasavitse</titlebook>
+        <authorbook>Alexander Pushkin</authorbook>
+        <durationbook>100</durationbook>
+        <idbook>000000b1-0000-0000-0000-000000000001</idbook>
+        <contentsbook>files/Krasavitse.wav</contentsbook>
+        <languagebook>RUSSIAN</languagebook>
+        <categorybook>DOCUMENTARY</categorybook>
+    </audiobook>
+    <audiobook>
+        <titlebook>Je Veux Des Pâtes</titlebook>
+        <authorbook>Stephanie Blake</authorbook>
+        <durationbook>160</durationbook>
+        <idbook>000000c1-0000-0000-0000-000000000001</idbook>
+        <contentsbook>files/JeVeuxDesPates.wav</contentsbook>
+        <languagebook>FRENCH</languagebook>
+        <categorybook>YOUTH</categorybook>
+    </audiobook>
+    <audiobook>
+        <titlebook>The Man, His Son And Their Donkey (父亲 儿子和驴)</titlebook>
+        <authorbook>Little Fox (小狐狸)</authorbook>
+        <durationbook>160</durationbook>
+        <idbook>000000d1-0000-0000-0000-000000000001</idbook>
+        <contentsbook>files/TheManHisSonAndTheirDonkey.wav</contentsbook>
+        <languagebook>CHINESE</languagebook>
+        <categorybook>NOVEL</categorybook>
+    </audiobook>
+    <audiobook>
+        <titlebook>Anti-Bomben-Diskurs</titlebook>
+        <authorbook>Albert Einstein</authorbook>
+        <durationbook>57</durationbook>
+        <idbook>000000e1-0000-0000-0000-000000000001</idbook>
+        <contentsbook>files/AntiBombenDiskurs.wav</contentsbook>
+        <languagebook>GERMAN</languagebook>
+        <categorybook>SPEECH</categorybook>
+    </audiobook>
+    <audiobook>
+        <titlebook>Don Quichotte</titlebook>
+        <authorbook>Miguel Cervantes</authorbook>
+        <durationbook>1740</durationbook>
+        <idbook>000000f1-0000-0000-0000-000000000001</idbook>
+        <contentsbook>files/DonQuichotte.wav</contentsbook>
+        <languagebook>SPANISH</languagebook>
+        <categorybook>NOVEL</categorybook>
+    </audiobook>
+    <audiobook>
+        <titlebook>Hamlet</titlebook>
+        <authorbook>William Shakespeare</authorbook>
+        <durationbook>1560</durationbook>
+        <idbook>00000aa1-0000-0000-0000-000000000001</idbook>
+        <contentsbook>files/Hamlet.wav</contentsbook>
+        <languagebook>ENGLISH</languagebook>
+        <categorybook>THEATRE</categorybook>
+    </audiobook>
+</elements>

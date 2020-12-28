@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<albums>
+    <album>
+        <title>Scorpion</title>
+        <artist>Drake</artist>
+        <duration>375</duration>
+        <date>2018</date>
+        <id>4daa8a3d-ac74-436e-9d30-3fdd5d19eb9b</id>
+        <song>
+            <titlesong>Survival</titlesong>
+            <artistsong>Drake</artistsong>
+            <durationsong>136</durationsong>
+            <idsong>00000ba1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/Survival.wav</contentssong>
+            <genresong>RAP</genresong>
+        </song>
+        <song>
+            <titlesong>Nonstop</titlesong>
+            <artistsong>Drake</artistsong>
+            <durationsong>239</durationsong>
+            <idsong>00000ca1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/Nonstop.wav</contentssong>
+            <genresong>RAP</genresong>
+        </song>
+    </album>
+    <album>
+        <title>Deutsche Oper</title>
+        <artist>Richard Wagner</artist>
+        <duration>843</duration>
+        <date>1870</date>
+        <id>ee168171-ea3d-476e-8217-451e58dedb6b</id>
+        <song>
+            <titlesong>Der Engel</titlesong>
+            <artistsong>Richard Wagner</artistsong>
+            <durationsong>208</durationsong>
+            <idsong>00000bb1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/DerEngel.mp3</contentssong>
+            <genresong>CLASSIC</genresong>
+        </song>
+        <song>
+            <titlesong>Der Walkürenritt</titlesong>
+            <artistsong>Richard Wagner</artistsong>
+            <durationsong>383</durationsong>
+            <idsong>00000ea1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/DerWalkurenritt.mp3</contentssong>
+            <genresong>CLASSIC</genresong>
+        </song>
+        <song>
+            <titlesong>Traüme</titlesong>
+            <artistsong>Richard Wagner</artistsong>
+            <durationsong>252</durationsong>
+            <idsong>00000fa1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/Traume.mp3</contentssong>
+            <genresong>CLASSIC</genresong>
+        </song>
+    </album>
+    <album>
+        <title>Love Yourself</title>
+        <artist>BTS</artist>
+        <duration>463</duration>
+        <date>2018</date>
+        <id>5ed77ebc-6f45-41c1-b253-42828a4c69aa</id>
+        <song>
+            <titlesong>I'm Fine</titlesong>
+            <artistsong>BTS</artistsong>
+            <durationsong>240</durationsong>
+            <idsong>000000c1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/ImFine.wav</contentssong>
+            <genresong>KPOP</genresong>
+        </song>
+        <song>
+            <titlesong>Save Me</titlesong>
+            <artistsong>BTS</artistsong>
+            <durationsong>223</durationsong>
+            <idsong>000000b1-0001-0000-0000-000000000000</idsong>
+            <contentssong>files/SaveMe.wav</contentssong>
+            <genresong>KPOP</genresong>
+        </song>
+    </album>
+</albums>
