@@ -166,4 +166,33 @@
             <categorybook>NOVEL</categorybook>
         </book>
     </playlist>
+    <playlist>
+        <name>ToListenTo</name>
+        <id>562a936d-550e-4cb4-972a-7be020e1a10e</id>
+        <song>
+            <titlesong>Precious</titlesong>
+            <artistsong>Ateez</artistsong>
+            <durationsong>102</durationsong>
+            <idsong>000000a1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/Precious.wav</contentssong>
+            <genresong>KPOP</genresong>
+        </song>
+        <song>
+            <titlesong>Badunkadunk</titlesong>
+            <artistsong>BLV</artistsong>
+            <durationsong>86</durationsong>
+            <idsong>000000d1-0000-0000-0000-000000000000</idsong>
+            <contentssong>files/Badunkadunk.wav</contentssong>
+            <genresong>POP</genresong>
+        </song>
+        <book>
+            <titlebook>Bel Ami</titlebook>
+            <authorbook>Guy De Maupassant</authorbook>
+            <durationbook>60</durationbook>
+            <idbook>000000a1-0000-0000-0000-000000000001</idbook>
+            <contentsbook>files/BelAmi.wav</contentsbook>
+            <languagebook>FRENCH</languagebook>
+            <categorybook>NOVEL</categorybook>
+        </book>
+    </playlist>
 </playlists>
