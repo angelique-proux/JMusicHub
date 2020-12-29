@@ -19,10 +19,9 @@ import java.util.UUID;
 
 public class AudioBook extends Media{
 
-	private String author;
-	private Languages language;
-	private Categories category;
-	//attributes
+	private String author;	     // Author of audio books
+	private Languages language;  // Language of audio books 
+	private Categories category; // Category of audio books 
 
 	/**
 	* Builder 1 (existing audiobook)
@@ -57,20 +56,20 @@ public class AudioBook extends Media{
 
 	public String getAuthor() {
 		return this.author;
-	}//Method that returns from author
+	}// Method that returns from author
 	
 	public String getCategory() {
 		return this.category.getCategory();
-	}//Method return audiobook category
+	}// Method return audiobook category
 
 	public String getLanguage() {
 		return this.language.getLanguage();
-	}//Method return the language of audiobooks
+	}// Method return the language of audiobooks
 
 	public String toString() {
 		String show = "\n\t->Title : " + this.title + "\t Author : " + this.author + "\n\tDuration : " + this.duration + "s" + "\t\t ID : " + this.id.hashCode() + "\n\tContents : " + this.contents + "\tLanguage : " + this.language.getLanguage() + "\n\tCategory : " + this.category.getCategory();
 
 		return show;
-	}//Method that displays information about the audiobook
+	}// Method that displays information about the audiobook
 
 }
