@@ -16,7 +16,7 @@ import java.lang.Exception;
 public class NotAnExistingAlbum extends Exception{
 
 	/**
-       * Exception showing existing album error handling mechanism for album
+       * Exception showing album error handling mechanism
        */
 	
 	public NotAnExistingAlbum() {
