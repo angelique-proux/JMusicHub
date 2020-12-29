@@ -22,10 +22,10 @@ public class AudioBook extends Media{
 	private String author;
 	private Languages language;
 	private Categories category;
-	//attributs
+	//attributes
 
 	/**
-	*  Constructeur 1 (livre audio existant)
+	* Builder 1 (existing audiobook)
 	*/
 	public AudioBook(String title, String author, int duration, String contents, Languages language, Categories category, String id) {
 
@@ -40,7 +40,7 @@ public class AudioBook extends Media{
 	}
 
 	/**
-	*  Constructeur 2 (nouveau livre audio)
+	* Builder 2 (new audiobook)
 	*/
 	public AudioBook(String title, String author, int duration, String contents, Languages language, Categories category) {
 
@@ -57,20 +57,20 @@ public class AudioBook extends Media{
 
 	public String getAuthor() {
 		return this.author;
-	}//méthode 2 : renvoie de l'auteur
-
+	}//Method that returns from author
+	
 	public String getCategory() {
 		return this.category.getCategory();
-	}
+	}//Method return audiobook category
 
 	public String getLanguage() {
 		return this.language.getLanguage();
-	}
+	}//Method return the language of audiobooks
 
 	public String toString() {
 		String show = "\n\t->Title : " + this.title + "\t Author : " + this.author + "\n\tDuration : " + this.duration + "s" + "\t\t ID : " + this.id.hashCode() + "\n\tContents : " + this.contents + "\tLanguage : " + this.language.getLanguage() + "\n\tCategory : " + this.category.getCategory();
 
 		return show;
-	}// méthode 5 : affichage des informations concernant le livre audio
+	}//Method that displays information about the audiobook
 
 }
