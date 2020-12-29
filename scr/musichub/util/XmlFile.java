@@ -510,6 +510,7 @@ public class XmlFile {
   /*
   * Method to get the list of playlists
   */
+  
   public LinkedList<Playlist> getListPlaylist() {
     Node playlists = docPlaylist.getFirstChild();
     int nbChild = playlists.getChildNodes().getLength();
@@ -533,6 +534,7 @@ public class XmlFile {
   /*
   * Method to save utility lists in xml files
   */
+  
   public void setXmlWithUtilList(Util util) {
     writeXml(filepathMedias, util);
     writeXml(filepathAlbum, util);
@@ -540,8 +542,9 @@ public class XmlFile {
   }
 
   /*
-  * Write the xml file with the util content
+  * Method to write the xml file with the util content
   */
+  
   public void writeXml(String whereToWrite, Util util) {
     //write a new xml with the content of the application
     try {
