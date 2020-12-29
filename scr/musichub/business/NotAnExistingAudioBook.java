@@ -16,7 +16,7 @@ import java.lang.Exception;
 public class NotAnExistingAudioBook extends Exception{
 	
        /**
-       * Exception showing existing audioBook error handling mechanism for audiobook
+       * Exception showing audioBook error handling mechanism 
        */
 
 	public NotAnExistingAudioBook() {
