@@ -19,9 +19,12 @@ import java.lang.String;
 
 public class Song extends Media implements InterfaceGenre {
 
-	private String artist;
-	private Genres genre;
-	//Attributes
+	private String artist;  // Song artist
+	private Genres genre;  // The genre of the song
+	
+	 /**
+  	  *  Builder 1 (existing song)
+  	 */
 
 	public Song(String title, String artist, int duration, String contents, Genres genre, String id) {
 
@@ -32,8 +35,12 @@ public class Song extends Media implements InterfaceGenre {
 		this.contents = contents;
 		this.genre = genre;
 
-	} //builder 1 (existing song)
-
+	}
+	
+	/**
+  	  * Builder 2 (new song)
+  	*/
+	
 	public Song(String title, String artist, int duration, String contents, Genres genre) {
 
 		this.title = title;
@@ -43,13 +50,20 @@ public class Song extends Media implements InterfaceGenre {
 		this.contents = contents;
 		this.genre = genre;
 
-	} //builder 2 (new song)
-
+	}
+	
+	/**
+  	  * Method return the genre of songs
+  	*/
 
 	public String getGenre() {
 		return this.genre.getGenre();
-	} //Method return the genre of songs
-
+	} 
+	
+	/**
+  	  * Method to have the genre of a sound in xml
+  	*/
+	
 	public String getGenreForXML() {
 		switch (this.genre.getGenre()) {
 			case "Hip-Hop":
@@ -59,16 +73,24 @@ public class Song extends Media implements InterfaceGenre {
 			default:
 			return this.genre.getGenre().toUpperCase();
 		}
-	} //Method to have the genre of a sound in xml
-
+	}
+	
+	/**
+  	  * Method for obtaining the artist of the album
+  	*/
+	
 	public String getArtist() {
 		return this.artist;
-	} //Method for obtaining the artist of the album
-
+	} 
+	
+	/**
+  	  * Method to display song information
+  	*/
+	
 	public String toString() {
 		String show = "\n\t-> Title : " + this.title + "\t Artist : " + this.artist + "\n\tDuration : " + this.duration + "s" + "\t\t ID : " + this.id.hashCode() + "\n\tContents : " + this.contents + "\t Genre : " + this.genre.getGenre();
 
 		return show;
-	} //Method to display song information
+	} 
 
 }
