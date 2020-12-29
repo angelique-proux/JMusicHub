@@ -1,5 +1,5 @@
 /*
-* Nom de l'exception : NotALanguageException
+* Name of exception : NotALanguageException
 *
 * Description   : Exception qui gère les languages des livres audio
 *
@@ -15,6 +15,10 @@ import java.lang.Exception;
 
 public class NotALanguageException extends Exception{
 
+       /**
+       * Exception showing language error handling mechanism for audiobooks
+       */
+	
 	public NotALanguageException(String titleSong) {
 		System.out.println("False language in xml. Please change the language of " + titleSong + ".");
 	}
