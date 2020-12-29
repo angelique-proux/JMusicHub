@@ -267,6 +267,7 @@ public class XmlFile {
   /*
   * Method for obtaining the list of audiobooks
   */
+  
   public LinkedList<AudioBook> getListAudioBooks() {
     Node audios = docMedias.getFirstChild();
     int nbChild = audios.getChildNodes().getLength();
@@ -292,29 +293,28 @@ public class XmlFile {
     return audioBooksList;
   }
 
-
   /*
-  * Permet d'obtenir une chanson
-  * Et de vérifier si le genre est correct
+  * Method for obtaining a song and check if the gender is correct
   */
+  
   private Song getSong(Node n) throws NotAGenreException {
     String title = "";
     String artiste = "";
     int duree = 1;
     String contenu = "";
     String id = "";
-    String genre = ""; //GN: Si on n'initialise pas chacune des variables, cela ne marche pas
+    String genre = ""; 
 
-    //Nous allons maintenant traiter les nœuds enfants du nœud en cours de traitement
+    // We are now going to process the child nodes of the node being processed
     int nbChild = n.getChildNodes().getLength();
-    //Nous récupérons la liste des nœuds enfants
+    // We retrieve the list of child nodes
     NodeList list = n.getChildNodes();
 
-    //nous parcourons la liste des nœuds
+    // We browse the list of nodes
     for(int i = 0; i < nbChild; i++) {
       Node n2 = list.item(i);
 
-      //si le nœud enfant est un Element, nous le traitons
+      // If the child node is an Element, we treat it
       if (n2 instanceof Element) {
         switch(n2.getNodeName()) {
           case "titlesong":
@@ -357,21 +357,21 @@ public class XmlFile {
   }
 
   /*
-  * Permet d'obtenir la liste des chansons
+  * Method to get the song list
   */
   public LinkedList<Song> getListSongs() {
     Node songs = docMedias.getFirstChild();
 
-    //Nous récupérons la liste des nœuds enfants
+    // We retrieve the list of child nodes
     NodeList list = songs.getChildNodes();
 
     LinkedList<Song> songsList = new LinkedList<Song>();
 
-    //Nous parcourons la liste des nœuds
+    // We go through the list of nodes
     for(int i = 0; i < list.getLength(); i++) {
       Node n2 = list.item(i);
 
-      //si le nœud enfant est un Element, nous le traitons
+      // If the child node is an Element, we treat it
       if (n2 instanceof Element) {
         if (n2.getNodeName().equals("song")) {
           try {
@@ -386,7 +386,7 @@ public class XmlFile {
 
 
   /*
-  * Permet d'obtenir un album
+  * Method for obtaining an album
   */
   private Album getAlbum(Node n) {
     String title = "";
@@ -396,16 +396,16 @@ public class XmlFile {
     String id = "0-0-0-0-0";
     LinkedList<Song> songs = new LinkedList<Song>();
 
-    //Nous allons maintenant traiter les nœuds enfants du nœud en cours de traitement
+    // We are now going to process the child nodes of the node being processed
     int nbChild = n.getChildNodes().getLength();
-    //Nous récupérons la liste des nœuds enfants
+    // We retrieve the list of child nodes
     NodeList list = n.getChildNodes();
 
-    //nous parcourons la liste des nœuds
+    // We browse the list of nodes
     for(int i = 0; i < nbChild; i++) {
       Node n2 = list.item(i);
 
-      //si le nœud enfant est un Element, nous le traitons
+      // If the child node is an Element, we treat it
       if (n2 instanceof Element) {
         switch(n2.getNodeName()) {
           case "title":
@@ -437,21 +437,21 @@ public class XmlFile {
   }
 
   /*
-  * Permet d'obtenir la liste des albums
+  * Method for obtaining the list of albums
   */
   public LinkedList<Album> getListAlbum() {
     Node albums = docAlbum.getFirstChild();
     int nbChild = albums.getChildNodes().getLength();
-    //Nous récupérons la liste des nœuds enfants
+    // We retrieve the list of child nodes
     NodeList list = albums.getChildNodes();
 
     LinkedList<Album> albumsList = new LinkedList<Album>();
 
-    //nous parcourons la liste des nœuds
+    // We browse the list of nodes
     for(int i = 0; i < nbChild; i++) {
       Node n2 = list.item(i);
 
-      //si le nœud enfant est un Element, nous le traitons
+      // If the child node is an Element, we treat it
       if (n2 instanceof Element) {
         albumsList.add(getAlbum(n2));
       }
@@ -461,7 +461,7 @@ public class XmlFile {
 
 
   /*
-  * Permet d'obtenir une playlist
+  * Method for obtaining a playlist
   */
   private Playlist getPlaylist(Node n) {
     String name = "";
@@ -469,16 +469,16 @@ public class XmlFile {
     LinkedList<Song> songs = new LinkedList<Song>();
     LinkedList<AudioBook> audiobooks = new LinkedList<AudioBook>();
 
-    //Nous allons maintenant traiter les nœuds enfants du nœud en cours de traitement
+    // We are now going to process the child nodes of the node being processed
     int nbChild = n.getChildNodes().getLength();
-    //Nous récupérons la liste des nœuds enfants
+    // We retrieve the list of child nodes
     NodeList list = n.getChildNodes();
 
-    //nous parcourons la liste des nœuds
+    // We browse the list of nodes
     for(int i = 0; i < list.getLength(); i++) {
       Node n2 = list.item(i);
 
-      //si le nœud enfant est un Element, nous le traitons
+      // If the child node is an Element, we treat it
       if (n2 instanceof Element) {
         switch(n2.getNodeName()) {
           case "name":
@@ -508,21 +508,21 @@ public class XmlFile {
   }
 
   /*
-  * Permet d'obtenir la liste des playlists
+  * Method to get the list of playlists
   */
   public LinkedList<Playlist> getListPlaylist() {
     Node playlists = docPlaylist.getFirstChild();
     int nbChild = playlists.getChildNodes().getLength();
-    //Nous récupérons la liste des nœuds enfants
+    // We retrieve the list of child nodes
     NodeList list = playlists.getChildNodes();
 
     LinkedList<Playlist> playlistList = new LinkedList<Playlist>();
 
-    //nous parcourons la liste des nœuds
+    // We browse the list of nodes
     for(int i = 0; i < nbChild; i++) {
       Node n2 = list.item(i);
 
-      //si le nœud enfant est un Element, nous le traitons
+      // If the child node is an Element, we treat it
       if (n2 instanceof Element) {
         playlistList.add(getPlaylist(n2));
       }
@@ -530,13 +530,8 @@ public class XmlFile {
     return playlistList ;
   }
 
-
-
-
-
-
   /*
-  * Save the util lists in the xml files
+  * Method to save utility lists in xml files
   */
   public void setXmlWithUtilList(Util util) {
     writeXml(filepathMedias, util);
