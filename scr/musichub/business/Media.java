@@ -22,21 +22,37 @@ public abstract class Media implements InterfaceTitle, InterfaceString, Interfac
 	protected String contents; // Content of sound and audiobooks
 
 	public abstract String toString(); // Returns a string describing this abstract method
-
+	
+	 /**
+  	   * Method returns title of sound and audiobooks
+         */
+	
 	public String getTitle() {
 		return this.title;
-	} // Method returns title of sound and audiobooks
+	} 
 
+	 /**
+  	   * Method for obtaining content from sounds and audio books
+         */
+	
 	public String getContent() {
 		return this.contents;
-	} // Method for obtaining content from sounds and audio books
+	}  
 
+	 /**
+  	   * Method for obtaining the sound and audiobooks identifier
+         */
+	
 	public String getId() {
 		return this.id.toString();
-	} // Method for obtaining the sound and audiobooks identifier
-
+	} 
+	
+	 /**
+  	   * Method for obtaining the duration of sound and audiobooks
+         */
+	
 	public int getDuration() {
 		return this.duration;
-	} // Method for obtaining the duration of sound and audiobooks
+	} 
 
 }
