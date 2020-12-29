@@ -21,7 +21,7 @@ public class Song extends Media implements InterfaceGenre {
 
 	private String artist;
 	private Genres genre;
-	//attributs
+	//Attributes
 
 	public Song(String title, String artist, int duration, String contents, Genres genre, String id) {
 
@@ -32,7 +32,7 @@ public class Song extends Media implements InterfaceGenre {
 		this.contents = contents;
 		this.genre = genre;
 
-	} //constructeur 1 (chanson existante)
+	} //builder 1 (existing song)
 
 	public Song(String title, String artist, int duration, String contents, Genres genre) {
 
@@ -43,12 +43,12 @@ public class Song extends Media implements InterfaceGenre {
 		this.contents = contents;
 		this.genre = genre;
 
-	} //constructeur 2 (nouvelle chanson)
+	} //builder 2 (new song)
 
 
 	public String getGenre() {
 		return this.genre.getGenre();
-	} // méthode 7 : obtention du genre
+	} //Method return the genre of songs
 
 	public String getGenreForXML() {
 		switch (this.genre.getGenre()) {
@@ -59,16 +59,16 @@ public class Song extends Media implements InterfaceGenre {
 			default:
 			return this.genre.getGenre().toUpperCase();
 		}
-	}
+	} //Method to have the genre of a sound in xml
 
 	public String getArtist() {
 		return this.artist;
-	}
+	} //Method for obtaining the artist of the album
 
 	public String toString() {
 		String show = "\n\t-> Title : " + this.title + "\t Artist : " + this.artist + "\n\tDuration : " + this.duration + "s" + "\t\t ID : " + this.id.hashCode() + "\n\tContents : " + this.contents + "\t Genre : " + this.genre.getGenre();
 
 		return show;
-	}// méthode 5 : affichage des informations concernant la chanson
+	} //Method to display song information
 
 }
