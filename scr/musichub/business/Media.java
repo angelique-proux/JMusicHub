@@ -21,7 +21,7 @@ public abstract class Media implements InterfaceTitle, InterfaceString, Interfac
 	protected UUID id;	   // Sound and audiobooks identifier
 	protected String contents; // Content of sound and audiobooks
 
-	public abstract String toString();
+	public abstract String toString(); // Returns a string describing this abstract method
 
 	public String getTitle() {
 		return this.title;
