@@ -11,7 +11,7 @@
 
 package musichub.util;
 
-// our packages
+// Our packages
 import musichub.business.*;
 import musichub.util.*;
 import musichub.main.*;
@@ -20,35 +20,35 @@ import musichub.main.*;
 import java.io.File;
 import java.io.IOException;
 
-//sax
+// Sax
 import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXParseException;;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-//build the file
+// Build the file
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-//modify the file
+// Modify the file
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.*;
 
-//create the body of the xmlfile
+// Create the body of the xmlfile
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-//read the file
+// Read the file
 import org.w3c.dom.traversal.DocumentTraversal;
 import org.w3c.dom.traversal.NodeFilter;
 import org.w3c.dom.traversal.TreeWalker;
 
-//delete file
+// Delete file
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -57,19 +57,23 @@ import java.time.*;
 import java.util.*;
 import java.lang.String;
 
-public class XmlFile{
-  Element root;
-  private static String filepathPlaylist = "files/playlists.xml";
-  private static String filepathAlbum = "files/albums.xml";
-  private static String filepathMedias= "files/elements.xml";
-  private TransformerFactory transformerFactory;
-  private Transformer transformer;
-  private DocumentBuilderFactory docFactory;
-  private DocumentBuilder docBuilder;
-  private static Document docPlaylist;
-  private static Document docAlbum;
-  private static Document docMedias;
+public class XmlFile {
+  Element root;                                                   // Have the elements at the root
+  private static String filepathPlaylist = "files/playlists.xml"; // Playlist path in XML
+  private static String filepathAlbum = "files/albums.xml";       // Album path in XML
+  private static String filepathMedias= "files/elements.xml";     // Medias path in XML
+  private TransformerFactory transformerFactory;                  // A TransformerFactory instance can be used to create Transformer and Templates objects
+  private Transformer transformer;                                // Reset this Transformer to its original configuration
+  private DocumentBuilderFactory docFactory;                      // Set a feature for this DocumentBuilderFactory and DocumentBuilders created by this factory.
+  private DocumentBuilder docBuilder;                             // Creates a new instance of a DocumentBuilder using the currently configured parameters
+  private static Document docPlaylist;                            // Documents on the playlist
+  private static Document docAlbum;                               // Documents on the Album
+  private static Document docMedias;                              // Documents on the Medias
 
+  /*
+  * Construction of documents for each xml
+  */
+  
   public XmlFile() {
     try {
       docFactory = DocumentBuilderFactory.newInstance();
@@ -78,7 +82,6 @@ public class XmlFile{
       transformerFactory = TransformerFactory.newInstance();
       transformer = transformerFactory.newTransformer();
 
-      //construction de documents pour chaque xml
       docPlaylist = docBuilder.parse(filepathPlaylist);
       docAlbum = docBuilder.parse(filepathAlbum);
       docMedias = docBuilder.parse(filepathMedias);
@@ -94,10 +97,10 @@ public class XmlFile{
     }
   }
 
-
   /*
-  * Permet d'afficher un xml
+  * Method for displaying an xml
   */
+  
   public void showXML(String xmlWanted) {
     Document thisDocumentMustBeShowed;
     switch (xmlWanted) {
@@ -119,60 +122,60 @@ public class XmlFile{
     System.out.println(desc);
   }
 
-
   /*
-  * Méthode qui va récupérer le contenu d'un nœud
+  * Method that will retrieve the content of a node
   */
+  
   public String getContent(Node n, String tab) {
     String str = new String();
-    //Nous nous assurons que le nœud passé en paramètre est une instance d'Element
+    // We make sure that the node passed in parameter is an Element instance
     if (n instanceof Element) {
-      //Nous castons l'objet de type Node en type Element
+      // We cast the object of type Node to type Element
       Element element = (Element)n;
 
-      //Nous pouvons récupérer le name du nœud actuellement parcouru
-      //grâce à cette méthode, nous ouvrons donc notre balise
+      // We can retrieve the name of the node currently browsed
+      // So we open our beacon
       str += "<" + n.getNodeName();
 
-      //nous contrôlons la liste des attributs présents
+      // We check the list of attributes present
       if (n.getAttributes() != null && n.getAttributes().getLength() > 0) {
 
-        //nous pouvons récupérer la liste des attributs d'un élément
+        // We can retrieve the list of attributes of an element
         NamedNodeMap att = n.getAttributes();
         int nbAtt = att.getLength();
 
-        //nous parcourons tous les nœuds pour les afficher
+        // We browse all nodes to display them
         for(int j = 0; j < nbAtt; j++) {
           Node noeud = att.item(j);
-          //On récupère le name de l'attribut et sa valeur grâce à ces deux méthodes
+          // We get the name of the attribute and its value using these two methods
           str += " " + noeud.getNodeName() + "=\"" + noeud.getNodeValue() + "\" ";
         }
       }
 
-      //nous refermons notre balise car nous avons traité les différents attributs
+      // We close our tag because we have processed the different attributes
       str += ">";
 
-      //La méthode getChildNodes retournant le contenu du nœud + les nœuds enfants
-      //Nous récupérons le contenu texte uniquement lorsqu'il n'y a que du texte, donc un seul enfant
+      // The getChildNodes method returning the content of the node + the child nodes
+      // We get text content only when there is only text, so only one child
       if (n.getChildNodes().getLength() == 1)
       str += n.getTextContent();
 
-      //Nous allons maintenant traiter les nœuds enfants du nœud en cours de traitement
+      // We are now going to process the child nodes of the node being processed
       int nbChild = n.getChildNodes().getLength();
-      //Nous récupérons la liste des nœuds enfants
+      // We retrieve the list of child nodes
       NodeList list = n.getChildNodes();
       String tab2 = tab + "\t";
 
-      //nous parcourons la liste des nœuds
+      // We go through the list of nodes
       for(int i = 0; i < nbChild; i++) {
         Node n2 = list.item(i);
-        //si le nœud enfant est un Element, nous le traitons
+        // If the child is an Element, we treat it
         if (n2 instanceof Element) {
-          //appel récursif à la méthode pour le traitement du nœud et de ses enfants
+          // Recursive call to the method for processing the node and its children
           str += "\n " + tab2 + getContent(n2, tab2);
         }
       }
-      //Nous fermons maintenant la balise
+      // We now close the tag
       if (n.getChildNodes().getLength() < 2)
       str += "</" + n.getNodeName() + ">";
       else
