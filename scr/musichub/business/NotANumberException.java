@@ -1,7 +1,7 @@
 /*
 * Nom de l'exception : NotANumberException
 *
-* Description   : Exception when an album does not exist in the list
+* Description   : Exception which manages the numerical choices of the MenuSelection class
 *
 * Date          : 03/01/2021
 *
@@ -16,7 +16,7 @@ import java.lang.Exception;
 public class NotANumberException extends Exception{
 
        /**
-       * Exception showing number error handling mechanism for album
+       * Exception showing number error handling mechanism for the MenuSelection class
        */
 	
 	public NotANumberException() {
