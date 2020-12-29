@@ -1,7 +1,7 @@
 /*
-* Nom de l'exception : NotAnExistingAudioBook
+* Name of exception : NotAnExistingAudioBook
 *
-* Description   : Exception lorsqu'un livre audio n'existe pas dans la liste
+* Description   : Exception when an audiobook does not exist in the list
 *
 * Date          : 03/01/2021
 *
@@ -14,6 +14,10 @@ package musichub.business;
 import java.lang.Exception;
 
 public class NotAnExistingAudioBook extends Exception{
+	
+       /**
+       * Exception showing existing audioBook error handling mechanism for audiobook
+       */
 
 	public NotAnExistingAudioBook() {
 		System.out.printf("\n\nPlease, chose an excisting audiobook.\n");
