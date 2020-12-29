@@ -16,27 +16,27 @@ import java.util.UUID;
 
 
 public abstract class Media implements InterfaceTitle, InterfaceString, InterfaceDuration {
-	protected String title;
-	protected int duration;
-	protected UUID id;
-	protected String contents;
+	protected String title;    // Title of sound and audiobooks
+	protected int duration;    // Total duration of sound and audiobooks
+	protected UUID id;	   // Sound and audiobooks identifier
+	protected String contents; // Content of sound and audiobooks
 
 	public abstract String toString();
 
 	public String getTitle() {
 		return this.title;
-	}
+	} // Method returns title of sound and audiobooks
 
 	public String getContent() {
 		return this.contents;
-	}
+	} // Method for obtaining content from sounds and audio books
 
 	public String getId() {
 		return this.id.toString();
-	}
+	} // Method for obtaining the sound and audiobooks identifier
 
 	public int getDuration() {
 		return this.duration;
-	}
+	} // Method for obtaining the duration of sound and audiobooks
 
 }
