@@ -184,30 +184,29 @@ public class XmlFile {
     return str;
   }
 
-
   /*
-  * Permet d'obtenir un livre audio
-  * Et de vérifier si la catégorie et la language sont correctes
+  * Method for obtaining an audiobook and checking if the category and language are correct
   */
+  
   private AudioBook getAudioBooks(Node n) throws NotACategoryException, NotALanguageException {
     String title = "";
     String auteur ="";
-    int duree = 1; //heures
+    int duree = 1; 
     String contenu = "";
     String id = "";
     String language = "";
-    String categorie = "";//GN: Si on n'initialise pas chacune des variables, cela ne marche pas
-
-    //Nous allons maintenant traiter les nœuds enfants du nœud en cours de traitement
+    String categorie = "";
+    
+    // We are now going to process the child nodes of the node being processed
     int nbChild = n.getChildNodes().getLength();
-    //Nous récupérons la liste des nœuds enfants
+    // We retrieve the list of child nodes
     NodeList list = n.getChildNodes();
 
-    //nous parcourons la liste des nœuds
+    // We browse the list of nodes
     for(int i = 0; i < nbChild; i++) {
       Node n2 = list.item(i);
 
-      //si le nœud enfant est un Element, nous le traitons
+      // If the child node is an Element, we treat it
       if (n2 instanceof Element) {
         switch(n2.getNodeName()) {
           case "titlebook":
@@ -266,20 +265,20 @@ public class XmlFile {
   }
 
   /*
-  * Permet d'obtenir la liste des livres audios
+  * Method for obtaining the list of audiobooks
   */
   public LinkedList<AudioBook> getListAudioBooks() {
     Node audios = docMedias.getFirstChild();
     int nbChild = audios.getChildNodes().getLength();
-    //Nous récupérons la liste des nœuds enfants
+    // We retrieve the list of child nodes
     NodeList list = audios.getChildNodes();
 
     LinkedList<AudioBook> audioBooksList = new LinkedList<AudioBook>();
-    //nous parcourons la liste des nœuds
+    // We go through the list of nodes
     for(int i = 0; i < nbChild; i++) {
       Node n2 = list.item(i);
 
-      //si le nœud enfant est un Element, nous le traitons
+      // If the child node is an Element, we treat it
       if (n2 instanceof Element) {
         if (n2.getNodeName().equals("audiobook")) {
           try {
