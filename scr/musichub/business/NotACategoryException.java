@@ -1,7 +1,7 @@
 /*
-* Nom de l'exception : NotACategoryException
+* Name of exception : NotACategoryException
 *
-* Description   : Exception qui gère les catégories des livres audio
+* Description   : Exception that manages audiobook categories
 *
 * Date          : 03/01/2021
 *
@@ -14,7 +14,11 @@ package musichub.business;
 import java.lang.Exception;
 
 public class NotACategoryException extends Exception{
-
+	
+       /**
+       * Exception showing category error handling mechanism for audiobooks
+       */
+	
 	public NotACategoryException(String titleSong) {
 		System.out.println("False category in xml. Please change the category of " + titleSong + ".");
 	}
