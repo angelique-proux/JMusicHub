@@ -14,11 +14,15 @@ import java.io.File;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
-import java.util.Scanner; //pour choisir ce qu'on veut écouter
-import java.util.Collections; //pour mélanger les audios
-import java.util.LinkedList; //pour avoir des listes d'audios
+import java.util.Scanner;      // Choose what you want to listen to
+import java.util.Collections;  // Mix audios
+import java.util.LinkedList;   // Have audio lists
 
 public class Music {
+	
+	 /**
+         *  Method for playing a sound
+         */
 
 	public static void PlaySound(File sound, int i) {
 		try {
@@ -50,7 +54,11 @@ public class Music {
 		} catch (Exception e) {
 		}
 	}
-
+	
+	/**
+         * Method for playing a list of sounds
+        */
+	
 	public static void PlayListOfSound(LinkedList<File> soundList, int i) {
 		try {
 			System.out.println("\nAdjust your volume, the music is playing!");
@@ -77,10 +85,13 @@ public class Music {
 		} catch (Exception e) {
 		}
 	}
-
-
+       
+	/**
+         * Method for playing an extract of a piece of music or a whole piece of music
+        */
+	
 	public static void listenToSomeMusic(String musicFilepath, Scanner sc) {
-		File mus = new File(musicFilepath); //Warting : it must be a .wav
+		File mus = new File(musicFilepath); 
 		String decision;
 		System.out.printf("To listen an extract, write « extract » ;\nTo listen the entire audio, write « listen ».\n");
 		decision = sc.nextLine();
@@ -90,7 +101,11 @@ public class Music {
 			PlaySound(mus, 0);
 		}
 	}
-
+	
+	/**
+         * Method for playing a sample of a song or an entire piece of music, from a music list
+        */
+	
 	public static void listenToAListOfMusics(LinkedList<String> listMusicFilepath, Scanner sc) {
 		LinkedList<File> musList = new LinkedList<File>();
 		for (int ind=0; ind<listMusicFilepath.size(); ind++) {
