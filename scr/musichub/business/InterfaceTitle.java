@@ -13,5 +13,10 @@ package musichub.business;
 
 
 public interface InterfaceTitle {
+	
+	/*
+	* It defines the signature of the method getTitle() which must be implemented in the classes built from this prototype
+	*/
+	
 	public String getTitle();
 }
