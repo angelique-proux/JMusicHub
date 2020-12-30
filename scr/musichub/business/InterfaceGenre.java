@@ -14,5 +14,10 @@ package musichub.business;
 
 
 public interface InterfaceGenre {
+	
+	/*
+	* It defines the signature of the method getGenre() which must be implemented in the classes built from this prototype
+	*/
+	
 	public String getGenre();
 }
