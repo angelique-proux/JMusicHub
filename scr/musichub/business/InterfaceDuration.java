@@ -14,6 +14,7 @@ package musichub.business;
 
 
 public interface InterfaceDuration {
+	
 	/*
 	* It defines the signature of the method getDuration which must be implemented in the classes built from this prototype
 	*/
