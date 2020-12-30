@@ -13,5 +13,10 @@ package musichub.business;
 
 
 public interface InterfaceString {
+	
+	/*
+	* It defines the signature of the method toString() which must be implemented in the classes built from this prototype
+	*/
+	
 	public String toString();
 }
