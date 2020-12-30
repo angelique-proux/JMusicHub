@@ -1,7 +1,7 @@
 /*
 * Name of exception : NotALanguageException
 *
-* Description   : Exception qui gère les languages des livres audio
+* Description   : Exception that manages audiobook languages
 *
 * Date          : 03/01/2021
 *
