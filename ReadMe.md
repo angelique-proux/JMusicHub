@@ -1,5 +1,6 @@
 # jMusicHub project
 ## By Manelle NOUAR and Angélique PROUX
+### 2020-2021
 
 
 ##### The project consists of the creation of a java application that manages musical elements. These elements can be songs or audio books.
@@ -12,6 +13,10 @@ $ ./compile.sh
 * Run on Linux
 ```text
 $ ./run.sh
+```
+### Command required to generate the javadoc
+```text
+$ ./generateJavaDoc.sh
 ```
 
 ### Usable commands

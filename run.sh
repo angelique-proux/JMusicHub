@@ -1,6 +1,6 @@
 #!/bin/sh
 
 clear
-java -classpath bin musichub.main.MenuSelection
+java -classpath bin main.MenuSelection
 
 #lance le programme
