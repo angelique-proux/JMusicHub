@@ -1,5 +1,5 @@
 # jMusicHub project
-## By Manelle NOUAR and Angélique PROUX
+## Project carried out by two people
 ### 2020-2021
 
 
